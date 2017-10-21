@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048bd72388a0805428a7ad8b95c2b589, type: 3}
+  m_Name: New Hilbert Curve
+  m_EditorClassIdentifier: 
+  m_x: 0
+  m_y: 0
+  m_xis: 0
+  m_xjs: 0
+  m_yis: 0
+  m_yjs: 0
+  m_n: 0
+  m_Points: []
