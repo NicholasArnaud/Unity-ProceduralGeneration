@@ -22,7 +22,7 @@ namespace Algorithms
         public int m_yjs;//upvector
         [Range(0, 8)]
         public int m_n;//number of iterations
-        [HideInInspector]
+ 
         public List<Vector2> m_Points;//store points         
 
         private void OnValidate()
@@ -46,7 +46,7 @@ namespace Algorithms
             else
             {
                 hilbert(x0, y0, yis / 2, yjs / 2, xis / 2, xjs / 2, n - 1); //first pos? yes.
-                hilbert(x0 + xis / 2, y0 + xjs / 2, xis / 2, xjs / 2, yis / 2, yjs / 2, n - 1);//this goes up?
+                hilbert(x0 + xis / 2, y0 + xjs / 2, xis / 2, xjs / 2, yis / 2, yjs / 2, Random.Range(0, 1) + n - 1);//this goes up?
                 hilbert(x0 + xis / 2 + yis / 2, y0 + xjs / 2 + yjs / 2, xis / 2, xjs / 2, yis / 2, yjs / 2, n - 1); //this goes right?
                 hilbert(x0 + xis / 2 + yis, y0 + xjs / 2 + yjs, -yis / 2, -yjs / 2, -xis / 2, -xjs / 2, n - 1);//this goes down?
             }
